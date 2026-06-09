@@ -1,0 +1,514 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #222;
+    background: #f5f5f5;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
+    background: #fff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+}
+
+.logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 24px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #222;
+    font-weight: 500;
+}
+
+.btn {
+    text-decoration: none;
+    background: #111;
+    color: #fff;
+    padding: 10px 18px;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #333;
+}
+
+.hero {
+    height: 80vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
+        url("https://images.unsplash.com/photo-1549298916-b41d501d3772?auto=format&fit=crop&w=1600&q=80")
+        center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.hero-content {
+    color: #fff;
+    max-width: 700px;
+    padding: 20px;
+}
+
+.hero-content h1 {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.featured {
+    padding: 80px 8%;
+}
+
+.featured h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 2rem;
+}
+
+.products {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 24px;
+}
+
+.card {
+    background: #fff;
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.card img {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+}
+
+.card h3 {
+    margin: 16px 0 8px;
+}
+
+.card p {
+    color: #666;
+    margin-bottom: 16px;
+}
+
+.card button {
+    border: none;
+    background: #111;
+    color: #fff;
+    padding: 10px 18px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.card button:hover {
+    background: #333;
+}
+
+.newsletter {
+    background: #111;
+    color: #fff;
+    text-align: center;
+    padding: 80px 8%;
+}
+
+.newsletter h2 {
+    margin-bottom: 16px;
+}
+
+.newsletter p {
+    margin-bottom: 24px;
+}
+
+.newsletter form {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.newsletter input {
+    padding: 12px 16px;
+    width: 320px;
+    border: none;
+    border-radius: 8px;
+}
+
+.newsletter button {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    background: #fff;
+    color: #111;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+footer {
+    text-align: center;
+    padding: 24px;
+    background: #111;
+    color: #fff;
+}
+
+.order-btn {
+    border: none;
+    background: #111;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 0.95rem;
+    transition: 0.3s;
+}
+
+.order-btn:hover {
+    background: #333;
+    transform: translateY(-2px);
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card p {
+    margin-bottom: 16px;
+}
+
+.about-hero {
+    background: linear-gradient(135deg, #111, #2d2d2d);
+    color: #fff;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.about-container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.about-hero h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.about-hero p {
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.8;
+    font-size: 1.1rem;
+}
+
+.about-content {
+    padding: 80px 20px;
+}
+
+.about-content .about-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.about-card {
+    background: #fff;
+    padding: 30px;
+    border-radius: 14px;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+}
+
+.about-card h2 {
+    margin-bottom: 15px;
+}
+
+.about-card p {
+    line-height: 1.7;
+    color: #555;
+}
+
+.about-card ul {
+    padding-left: 20px;
+}
+
+.about-card li {
+    margin-bottom: 10px;
+    color: #555;
+}
+
+.shop-header {
+    text-align: center;
+    padding: 70px 20px 40px;
+}
+
+.shop-header h1 {
+    font-size: 2.8rem;
+    margin-bottom: 10px;
+}
+
+.shop-header p {
+    color: #666;
+}
+
+.shop-products {
+    padding: 20px 8% 80px;
+}
+
+.login-container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f5f5f5;
+    padding: 20px;
+}
+
+.login-card {
+    background: #fff;
+    padding: 40px;
+    border-radius: 14px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+.msg {
+    display: inline-block;
+    margin-top: 1rem;
+}
+
+.login-card h1 {
+    margin-bottom: 10px;
+}
+
+.login-card p {
+    color: #666;
+    margin-bottom: 25px;
+}
+
+.login-card input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    font-size: 1rem;
+}
+
+.login-card button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    background: #111;
+    color: #fff;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.login-card button:hover {
+    background: #333;
+}
+
+.admin-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
+    background: #111;
+    color: #fff;
+}
+
+.admin-container {
+    padding: 50px 8%;
+    display: grid;
+    gap: 50px;
+}
+
+.admin-form {
+    background: #fff;
+    padding: 25px;
+    border-radius: 14px;
+    box-shadow: 0 4px 14px rgba(0,0,0,0.08);
+}
+
+.admin-form form {
+    display: grid;
+    gap: 12px;
+}
+
+.admin-form input {
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.admin-form button {
+    padding: 12px;
+    border: none;
+    background: #111;
+    color: #fff;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.delete-btn {
+    background: crimson;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.delete-btn:hover {
+    background: darkred;
+}
+
+.checkout-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
+    background: #111;
+    color: #fff;
+}
+
+.checkout-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    padding: 60px 8%;
+}
+
+.checkout-form,
+.checkout-summary {
+    background: #fff;
+    padding: 25px;
+    border-radius: 14px;
+    box-shadow: 0 4px 14px rgba(0,0,0,0.08);
+}
+
+.checkout-form form {
+    display: grid;
+    gap: 12px;
+    margin-top: 20px;
+}
+
+.checkout-form input {
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.checkout-form button {
+    padding: 12px;
+    border: none;
+    background: #111;
+    color: #fff;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.checkout-summary h2 {
+    margin-bottom: 20px;
+}
+
+.summary-card {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.summary-total {
+    margin-top: 20px;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.orders-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
+    background: #111;
+    color: #fff;
+}
+
+.orders-container {
+    padding: 60px 8%;
+}
+
+.orders-container h1 {
+    margin-bottom: 30px;
+}
+
+.orders-list {
+    display: grid;
+    gap: 20px;
+}
+
+.order-card {
+    background: #fff;
+    padding: 25px;
+    border-radius: 14px;
+    box-shadow: 0 4px 14px rgba(0,0,0,0.08);
+}
+
+.order-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.status {
+    background: orange;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 8px;
+    font-size: 0.9rem;
+}
+
+.status.delivered {
+    background: green;
+}
+
+.order-items {
+    margin-top: 15px;
+    padding-top: 10px;
+    border-top: 1px solid #eee;
+}
+
+.order-total {
+    margin-top: 15px;
+    font-size: 1.1rem;
+}
