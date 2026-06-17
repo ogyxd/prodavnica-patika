@@ -1,8 +1,8 @@
 <?php
 
-$host = "sql7.freesqldatabase.com";
-$user = "sql7829896";
-$pass = "LCimhaInIV";
+$host = "localhost";
+$user = "root";
+$pass = "";
 $name = "sql7829896";
 
 $dsn = "mysql:host=$host;dbname=$name;";
